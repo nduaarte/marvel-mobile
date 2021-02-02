@@ -1,18 +1,24 @@
 import React from 'react';
 import { ThemeProvider } from 'styled-components';
 import AppLoading from 'expo-app-loading';
-import { useFonts, Khula_400Regular, Khula_800ExtraBold, Khula_600SemiBold, Khula_300Light, Khula_700Bold} from '@expo-google-fonts/khula';
+import { useFonts } from '@expo-google-fonts/khula';
+
+import Gilroy_heavy from './src/assets/fonts/gilroy-heavy.ttf';
+import Gilroy_bold from './src/assets/fonts/gilroy-bold.ttf';
+import Gilroy_semibold from './src/assets/fonts/gilroy-semibold.ttf';
+import Gilroy_medium from './src/assets/fonts/gilroy-medium.ttf';
+import Gilroy_regular from './src/assets/fonts/gilroy-regular.ttf';
 
 import Routes from './src/Routes';
 import { Styles } from './src/Styles';
 
 export default function App() {
   let [fontsLoaded] = useFonts({
-    'Khula-heavy': Khula_800ExtraBold,
-    'Khula-bold': Khula_700Bold,
-    'Khula-semibold': Khula_600SemiBold,
-    'Khula-regular': Khula_400Regular,
-    'Khula-light': Khula_300Light
+    Gilroy_heavy,
+    Gilroy_bold,
+    Gilroy_semibold,
+    Gilroy_medium,
+    Gilroy_regular
   })
 
   if(!fontsLoaded) {

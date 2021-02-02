@@ -4,6 +4,7 @@ import { View } from 'react-native';
 import Header from './Header';
 import Description from './Description';
 import CharacterChoice from './CharacterChoice';
+import CardList from './CardList';
 
 const Home: React.FC = () => {
 	return (
@@ -11,6 +12,7 @@ const Home: React.FC = () => {
 			<Header />
 			<Description />
 			<CharacterChoice />
+			<CardList />
 		</View>
 	);
 }
