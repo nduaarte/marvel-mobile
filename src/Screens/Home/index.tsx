@@ -1,6 +1,7 @@
 import React from 'react';
 import { View } from 'react-native';
 
+import data from '../../assets/data.json';
 import Header from './Header';
 import Description from './Description';
 import CharacterChoice from './CharacterChoice';
@@ -12,7 +13,7 @@ const Home: React.FC = () => {
 			<Header />
 			<Description />
 			<CharacterChoice />
-			<CardList />
+			<CardList titleCategory='Heróis' category={data.heroes}/>
 		</View>
 	);
 }
