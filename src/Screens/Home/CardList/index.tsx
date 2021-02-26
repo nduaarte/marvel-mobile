@@ -11,17 +11,18 @@ interface PropsTypes {
 interface Types {
   name: string;
   alterEgo: string;
-  imagePath: File;
+  imagePath: string;
 }
 
 const CardList: React.FC<PropsTypes> = ({ titleCategory, category }) => {
 
   const cardGenerator = category.map(({ name, alterEgo, imagePath }, index) => (
+    
     <Card
       key={index}
       nameChar={name}
       nameFantasy={alterEgo}
-      imageBackgrond={imagePath} 
+      imageBackground={imagePath} 
     />
   ));
 
@@ -33,7 +34,7 @@ const CardList: React.FC<PropsTypes> = ({ titleCategory, category }) => {
       </TitleContainer>
 
       <Scroll horizontal>
-        {cardGenerator}
+        { cardGenerator }
       </Scroll>
     </Container>
   );
