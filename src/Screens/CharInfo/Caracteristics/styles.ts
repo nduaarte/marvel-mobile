@@ -3,12 +3,20 @@ import styled from 'styled-components/native';
 export const Container = styled.View`
   flex-direction: row;
   justify-content: space-around;
-  margin: 0 15px;
+  margin: 45px 15px 0;
 `;
 
-export const SubContainer = styled.View``;
+export const SubContainer = styled.View`
+  align-items: center;
+  justify-content: space-between;
+  height: 45px;
+`;
 
-export const  Icon = styled.Text``;
+export const  Icon = styled.Text`
+`;
 
-export const  Description = styled.Text``;
+export const  Description = styled.Text`
+  font-size: 12px;
+  color: ${({ theme }) => theme.white};
+`;
 
