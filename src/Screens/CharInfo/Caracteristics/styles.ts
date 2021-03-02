@@ -16,6 +16,7 @@ export const  Icon = styled.Text`
 `;
 
 export const  Description = styled.Text`
+  font-family: Gilroy_medium;
   font-size: 12px;
   color: ${({ theme }) => theme.white};
 `;
